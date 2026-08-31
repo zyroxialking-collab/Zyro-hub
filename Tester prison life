@@ -1,0 +1,7 @@
+while task.wait(0.15 do
+
+for _,player in ipairs(game.Player:GetPlayers()) do
+if player ~=game.LocalPlayer then
+   game.ReplicatedStorage.ShootEvent:FireServer(player)
+   end
+end
